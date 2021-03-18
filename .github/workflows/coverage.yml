@@ -27,5 +27,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Codecov
-        uses: codecov/codecov-action@v1.3
+        uses: codecov/codecov-action@v1.3.1
 
