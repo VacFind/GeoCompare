@@ -17,7 +17,7 @@ from fetchers.arcgis import Arcgis
 from fetchers.googledrive import Googledrive
 # import argparse
 
-def fetch_source(source):
+def select_fetcher_for_source(source):
 	fname = source.get_fetcher_name()
 	fetcher = None
 	if fname == 'arcgis':
@@ -27,10 +27,11 @@ def fetch_source(source):
 	else:
 		raise ValueError('Bad message type {}'.format(message_type))
 	
-	fetcher.fetch(source)
+	return fetcher
 
 if __name__ == "__main__":
 	configfile = Config.from_file('./config.json')
 	for source in configfile.get_sources():
-		fetch_source(source)
+		fetcher = select_fetcher_for_source(source)
+		fetcher.fetch(source)
 
