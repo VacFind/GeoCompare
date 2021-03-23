@@ -6,6 +6,17 @@ A tool to help automate the merging of geographical data (i.e. data that has coo
 
 This is useful for things like combining state-level vaccination site data into a national data set, and associating existing lists of vaccination sites with entries in a national database
 
+## Running for Development
+
+Here are the commands you will need to run the GeoCompare Command-Line interface :
+
+```
+pipenv install
+pipenv shell
+python3 ./main.py
+```
+
+
 
 ## Documentation
 
