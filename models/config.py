@@ -20,8 +20,9 @@ class Config:
 		for source in data["sources"]:
 			sources.append(Source.fromDict(source))
 
-		for action in data["actions"]:
-			actions.append(Action.from_dict(action))
+		if data.get("actions"):
+			for action in data["actions"]:
+				actions.append(Action.from_dict(action))
 		
 		return cls(sources=sources, actions=actions)
 
