@@ -12,10 +12,14 @@ from models.storage import CacheEntry
 from helpers import fetch_unless_cache
 import requests
 import json
+import logging 
+
 
 class Arcgis(Fetcher):
 	def __init__(self):
 		super().__init__("arcgis")
+		self.logger = logging.getLogger(__name__)
+
 		# designate a folder inside the cache for this fetchers files
 		self.cachepath = self.cachepath.joinpath(self.name)
 

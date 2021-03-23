@@ -1,5 +1,8 @@
 from models.storage import CacheEntry
 import requests
+import logging
+
+logger = logging.getLogger(__name__)
 
 # Since a geohash (in this implementation) is based on coordinates of longitude and latitude the distance between two geohashes reflects the distance in latitude/longitude coordinates between two points, which does not translate to actual distance, see Haversine formula. 
 # https://en.wikipedia.org/wiki/Haversine_formula
@@ -15,7 +18,10 @@ def fetch_unless_cache(cachepath, url, filename, headers, force_fetch=False):
 		cache_location = CacheEntry(cachepath, filename)
 
 	if not cache_location.exists() or force_fetch:
+		logger.info("Fetching " + url)
 		response = requests.get(url, headers=headers)
 
 		if response.status_code == 200:
 			cache_location.write(response.content, raw=True)
+	else: 
+		logger.info("resource already cached: " + url)

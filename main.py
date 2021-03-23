@@ -16,6 +16,7 @@ from models.source import Source
 from fetchers.arcgis import Arcgis
 from fetchers.googledrive import Googledrive
 # import argparse
+import logging 
 
 def select_fetcher_for_source(source):
 	fname = source.get_fetcher_name()
@@ -30,8 +31,25 @@ def select_fetcher_for_source(source):
 	return fetcher
 
 if __name__ == "__main__":
+	# set up argparse
+	# parser.add_argument('-v', '--verbose', action='count', default=0)
+
+
+
+	# set up logging
+	loglevel = logging.INFO # default loglevel
+	# if args.verbose == 1:
+	# 	loglevel = logging.INFO
+	# elif args.verbose >= 2:
+	# 	loglevel = logging.DEBUG
+	logging.basicConfig(level=loglevel)
+	logger = logging.getLogger(__name__)
+	logger.info("starting up")
+
+
 	configfile = Config.from_file('./config.json')
 	for source in configfile.get_sources():
+		logger.info("Checking source " + str(source))
 		fetcher = select_fetcher_for_source(source)
 		fetcher.fetch(source)
 
