@@ -34,4 +34,6 @@ def fetch_unless_cache(cachepath, url, filename, headers, force_fetch=False, cac
 
 
 def was_cached_since(cache_date, since):
+	if cache_date == None or since == None:
+		return False
 	return cache_date > since
