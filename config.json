@@ -632,7 +632,7 @@
 				},
 				{
 					"name": "states",
-					"url": "https://www.vaccinespotter.org/api/v0/states/states.json",
+					"url": "https://www.vaccinespotter.org/api/v0/states.json",
 					"filename": "states"
 				}
 			],
