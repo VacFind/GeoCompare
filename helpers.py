@@ -17,6 +17,9 @@ def fetch_unless_cache(cachepath, url, filename, headers, force_fetch=False, cac
 	# if there is no existing cache, create one
 	if not cache_location:
 		cache_location = CacheEntry(cachepath, filename)
+
+	if cached_since == None:
+		cached_since = datetime.datetime.now()
 	
 	is_recent_cache = was_cached_since(cache_location.get_date_saved(), cached_since)
 
