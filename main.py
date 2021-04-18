@@ -18,6 +18,7 @@ from fetchers.json import JSONFetcher
 from fetchers.googledrive import Googledrive
 # import argparse
 import logging 
+import datetime
 
 def select_fetcher_for_source(source):
 	fname = source.get_fetcher_name()
@@ -54,5 +55,5 @@ if __name__ == "__main__":
 	for source in configfile.get_sources():
 		logger.info("Checking source " + str(source))
 		fetcher = select_fetcher_for_source(source)
-		fetcher.fetch(source)
+		fetcher.fetch(source, if_since=(datetime.datetime.now() - datetime.timedelta(1)))
 
