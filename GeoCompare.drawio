@@ -1,0 +1,69 @@
+<mxfile host="Electron" modified="2021-03-06T04:25:57.584Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/13.7.9 Chrome/85.0.4183.121 Electron/10.1.3 Safari/537.36" etag="INnc2MtHzaa0BGDvgUh1" compressed="false" version="13.7.9" type="device">
+  <diagram id="LscZ_216-JA5jk5MYZ07" name="Page-1">
+    <mxGraphModel dx="702" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" parent="1" source="OhpWYWkyzgVGDgiEgkXA-1" target="OhpWYWkyzgVGDgiEgkXA-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-1" value="Fetcher" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="65" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-2" value="Local Cache" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="65" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" parent="1" source="Gai9pQvqyLNyNLbGslQi-23" target="OhpWYWkyzgVGDgiEgkXA-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="312.5" y="95" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" parent="1" source="OhpWYWkyzgVGDgiEgkXA-6" target="OhpWYWkyzgVGDgiEgkXA-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-6" value="Actions" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="180" width="275" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="OhpWYWkyzgVGDgiEgkXA-7" target="OhpWYWkyzgVGDgiEgkXA-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-7" value="Parsers" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="642.5" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-10" value="1. Fetchers download data from external sources to a local cache" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="40" width="360" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-11" value="2. Actions interact with this stored data through parsers&lt;br&gt;to perform actions like comparisons or other data manipulations&lt;br&gt;and produces a standardized result" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="442.5" y="310" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" parent="1" source="OhpWYWkyzgVGDgiEgkXA-12" target="OhpWYWkyzgVGDgiEgkXA-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-12" value="Result Cache" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="210" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=classic;endFill=1;" parent="1" source="OhpWYWkyzgVGDgiEgkXA-14" target="OhpWYWkyzgVGDgiEgkXA-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-14" value="Output" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-15" value="3. Outputs convert these stanardized results back to a format that is useful&lt;br&gt;for your workflow, like CSV, SQL,&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="390" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-17" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" parent="1" vertex="1">
+          <mxGeometry x="300" y="285" width="60" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OhpWYWkyzgVGDgiEgkXA-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=classic;endFill=1;" parent="1" source="OhpWYWkyzgVGDgiEgkXA-2" target="OhpWYWkyzgVGDgiEgkXA-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gai9pQvqyLNyNLbGslQi-22" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" width="360" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Gai9pQvqyLNyNLbGslQi-23" value="Sources&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;these can represent API&#39;s or any other&amp;nbsp;internet-accessible data&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="65" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
