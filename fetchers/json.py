@@ -20,7 +20,7 @@ class JSONFetcher(Fetcher):
 	def auth(self):
 		pass
 
-	def fetch(self, source, force_fetch=False):
+	def fetch(self, source, force_fetch=False, if_since=None):
 		urls = source.get_url_objects()
 		
 		for url in urls:
@@ -31,11 +31,11 @@ class JSONFetcher(Fetcher):
 			else:
 				state = url["parameters"]["state"]
 				filename = self.add_extension(self.generate_filename(source.get_id(), state))
-			self.fetch_json(full_url, filename, force_fetch=force_fetch)
 
+			self.fetch_json(full_url, filename, force_fetch=force_fetch, if_since=if_since)
 
-	def fetch_json(self, url, filename, force_fetch=False):	
-		fetch_unless_cache(self.cachepath, url, filename, self.build_headers(), force_fetch=force_fetch)
+	def fetch_json(self, url, filename, force_fetch=False, if_since=None):	
+		fetch_unless_cache(self.cachepath, url, filename, self.build_headers(), force_fetch=force_fetch, cached_since=if_since)
 
 	def add_extension(self, name):
 		return name + ".json"
