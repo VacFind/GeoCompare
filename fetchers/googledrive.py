@@ -33,7 +33,7 @@ class Googledrive(Fetcher):
 	def auth(self):
 		pass
 
-	def fetch(self, source):
+	def fetch(self, source, force_fetch=False, if_since=None):
 		urls = source.get_url_objects()
 
 		for url_parts in urls:
@@ -41,10 +41,10 @@ class Googledrive(Fetcher):
 			sheet = url_parts["parameters"]["sheet"]
 			url = self.generate_drive_csv_url(baseurl, sheet=sheet)
 			filename = self.add_extension(url_parts["filename"])
-			self.fetch_as_csv(url, filename)
+			self.fetch_as_csv(url, filename, force_fetch=force_fetch, if_since=if_since)
 
-	def fetch_as_csv(self, url, filename, force_fetch=None):
-		fetch_unless_cache(self.cachepath, url, filename, self.build_headers(), force_fetch=force_fetch)
+	def fetch_as_csv(self, url, filename, force_fetch=None, if_since=None):
+		fetch_unless_cache(self.cachepath, url, filename, self.build_headers(), force_fetch=force_fetch, cached_since=if_since)
 
 	def add_extension(self, name):
 		return name + ".csv"

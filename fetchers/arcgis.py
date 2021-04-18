@@ -29,7 +29,7 @@ class Arcgis(Fetcher):
 	def auth(self):
 		pass
 
-	def fetch(self, source):
+	def fetch(self, source, force_fetch=False, if_since=None):
 		urls = source.get_url_objects()
 		
 		for url_parts in urls:
@@ -37,7 +37,7 @@ class Arcgis(Fetcher):
 			layerID = int(url_parts["parameters"]["layerId"])
 			url = self.generate_geojson_url(serviceItemID, layerID=layerID)
 			filename = self.add_extension(url_parts["filename"])
-			self.fetch_geojson(url, filename)
+			self.fetch_geojson(url, filename, force_fetch=force_fetch, if_since=if_since)
 
 	# use me if a baseurl is provided instead of a serviveitemid and layer
 	def get_info(self, url):
@@ -52,8 +52,8 @@ class Arcgis(Fetcher):
 
 		return data
 
-	def fetch_geojson(self, url, filename, force_fetch=False):	
-		fetch_unless_cache(self.cachepath, url, filename, self.build_headers(), force_fetch=force_fetch)
+	def fetch_geojson(self, url, filename, force_fetch=False, if_since=None):	
+		fetch_unless_cache(self.cachepath, url, filename, self.build_headers(), force_fetch=force_fetch, cached_since=if_since)
 
 	def add_extension(self, name):
 		return name + ".geojson"
