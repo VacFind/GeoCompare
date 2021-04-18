@@ -54,5 +54,5 @@ if __name__ == "__main__":
 	for source in configfile.get_sources():
 		logger.info("Checking source " + str(source))
 		fetcher = select_fetcher_for_source(source)
-		fetcher.fetch(source, force_fetch=True)
+		fetcher.fetch(source)
 
