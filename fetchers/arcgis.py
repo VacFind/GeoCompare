@@ -29,7 +29,7 @@ class Arcgis(Fetcher):
 	def auth(self):
 		pass
 
-	def fetch(self, source):
+	def fetch(self, source, force_fetch=False):
 		urls = source.get_url_objects()
 		
 		for url_parts in urls:
@@ -37,7 +37,7 @@ class Arcgis(Fetcher):
 			layerID = int(url_parts["parameters"]["layerId"])
 			url = self.generate_geojson_url(serviceItemID, layerID=layerID)
 			filename = self.add_extension(url_parts["filename"])
-			self.fetch_geojson(url, filename)
+			self.fetch_geojson(url, filename, force_fetch=force_fetch)
 
 	# use me if a baseurl is provided instead of a serviveitemid and layer
 	def get_info(self, url):
