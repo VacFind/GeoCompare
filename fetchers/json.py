@@ -24,13 +24,14 @@ class JSONFetcher(Fetcher):
 		urls = source.get_url_objects()
 		
 		for url in urls:
-			url = url["url"]
-			state = url["parameters"]["state"]
-			if url["filename"]:
+			full_url = url["url"]
+				
+			if url.get("filename"):
 				filename = url["filename"]
 			else:
+				state = url["parameters"]["state"]
 				filename = self.add_extension(self.generate_filename(source.get_id(), state))
-			self.fetch_json(url, filename, force_fetch=force_fetch)
+			self.fetch_json(full_url, filename, force_fetch=force_fetch)
 
 
 	def fetch_json(self, url, filename, force_fetch=False):	
