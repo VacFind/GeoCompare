@@ -245,6 +245,398 @@
 				}
 			],
 			"map": {}
+		},
+		{
+			"name": "vaccinespotter",
+			"fetcher": "json",
+			"parser": "json",
+			"id": "vaccinespotter-bystate",
+			"urls": [
+				{
+					"name": "AL",
+					"url": "https://www.vaccinespotter.org/api/v0/states/AL.json",
+					"parameters": {
+						"state": "AL"
+					}
+				},
+				{
+					"name": "AK",
+					"url": "https://www.vaccinespotter.org/api/v0/states/AK.json",
+					"parameters": {
+						"state": "AK"
+					}
+				},
+				{
+					"name": "AZ",
+					"url": "https://www.vaccinespotter.org/api/v0/states/AZ.json",
+					"parameters": {
+						"state": "AZ"
+					}
+				},
+				{
+					"name": "AR",
+					"url": "https://www.vaccinespotter.org/api/v0/states/AR.json",
+					"parameters": {
+						"state": "AR"
+					}
+				},
+				{
+					"name": "CA",
+					"url": "https://www.vaccinespotter.org/api/v0/states/CA.json",
+					"parameters": {
+						"state": "CA"
+					}
+				},
+				{
+					"name": "CO",
+					"url": "https://www.vaccinespotter.org/api/v0/states/CO.json",
+					"parameters": {
+						"state": "CO"
+					}
+				},
+				{
+					"name": "CT",
+					"url": "https://www.vaccinespotter.org/api/v0/states/CT.json",
+					"parameters": {
+						"state": "CT"
+					}
+				},
+				{
+					"name": "DE",
+					"url": "https://www.vaccinespotter.org/api/v0/states/DE.json",
+					"parameters": {
+						"state": "DE"
+					}
+				},
+				{
+					"name": "DC",
+					"url": "https://www.vaccinespotter.org/api/v0/states/DC.json",
+					"parameters": {
+						"state": "DC"
+					}
+				},
+				{
+					"name": "FL",
+					"url": "https://www.vaccinespotter.org/api/v0/states/FL.json",
+					"parameters": {
+						"state": "FL"
+					}
+				},
+				{
+					"name": "GA",
+					"url": "https://www.vaccinespotter.org/api/v0/states/GA.json",
+					"parameters": {
+						"state": "GA"
+					}
+				},
+				{
+					"name": "HI",
+					"url": "https://www.vaccinespotter.org/api/v0/states/HI.json",
+					"parameters": {
+						"state": "HI"
+					}
+				},
+				{
+					"name": "ID",
+					"url": "https://www.vaccinespotter.org/api/v0/states/ID.json",
+					"parameters": {
+						"state": "ID"
+					}
+				},
+				{
+					"name": "IL",
+					"url": "https://www.vaccinespotter.org/api/v0/states/IL.json",
+					"parameters": {
+						"state": "IL"
+					}
+				},
+				{
+					"name": "IN",
+					"url": "https://www.vaccinespotter.org/api/v0/states/IN.json",
+					"parameters": {
+						"state": "IN"
+					}
+				},
+				{
+					"name": "IA",
+					"url": "https://www.vaccinespotter.org/api/v0/states/IA.json",
+					"parameters": {
+						"state": "IA"
+					}
+				},
+				{
+					"name": "KS",
+					"url": "https://www.vaccinespotter.org/api/v0/states/KS.json",
+					"parameters": {
+						"state": "KS"
+					}
+				},
+				{
+					"name": "KY",
+					"url": "https://www.vaccinespotter.org/api/v0/states/KY.json",
+					"parameters": {
+						"state": "KY"
+					}
+				},
+				{
+					"name": "LA",
+					"url": "https://www.vaccinespotter.org/api/v0/states/LA.json",
+					"parameters": {
+						"state": "LA"
+					}
+				},
+				{
+					"name": "ME",
+					"url": "https://www.vaccinespotter.org/api/v0/states/ME.json",
+					"parameters": {
+						"state": "ME"
+					}
+				},
+				{
+					"name": "MD",
+					"url": "https://www.vaccinespotter.org/api/v0/states/MD.json",
+					"parameters": {
+						"state": "MD"
+					}
+				},
+				{
+					"name": "MA",
+					"url": "https://www.vaccinespotter.org/api/v0/states/MA.json",
+					"parameters": {
+						"state": "MA"
+					}
+				},
+				{
+					"name": "MI",
+					"url": "https://www.vaccinespotter.org/api/v0/states/MI.json",
+					"parameters": {
+						"state": "MI"
+					}
+				},
+				{
+					"name": "MN",
+					"url": "https://www.vaccinespotter.org/api/v0/states/MN.json",
+					"parameters": {
+						"state": "MN"
+					}
+				},
+				{
+					"name": "MS",
+					"url": "https://www.vaccinespotter.org/api/v0/states/MS.json",
+					"parameters": {
+						"state": "MS"
+					}
+				},
+				{
+					"name": "MO",
+					"url": "https://www.vaccinespotter.org/api/v0/states/MO.json",
+					"parameters": {
+						"state": "MO"
+					}
+				},
+				{
+					"name": "MT",
+					"url": "https://www.vaccinespotter.org/api/v0/states/MT.json",
+					"parameters": {
+						"state": "MT"
+					}
+				},
+				{
+					"name": "NE",
+					"url": "https://www.vaccinespotter.org/api/v0/states/NE.json",
+					"parameters": {
+						"state": "NE"
+					}
+				},
+				{
+					"name": "NV",
+					"url": "https://www.vaccinespotter.org/api/v0/states/NV.json",
+					"parameters": {
+						"state": "NV"
+					}
+				},
+				{
+					"name": "NH",
+					"url": "https://www.vaccinespotter.org/api/v0/states/NH.json",
+					"parameters": {
+						"state": "NH"
+					}
+				},
+				{
+					"name": "NJ",
+					"url": "https://www.vaccinespotter.org/api/v0/states/NJ.json",
+					"parameters": {
+						"state": "NJ"
+					}
+				},
+				{
+					"name": "NM",
+					"url": "https://www.vaccinespotter.org/api/v0/states/NM.json",
+					"parameters": {
+						"state": "NM"
+					}
+				},
+				{
+					"name": "NY",
+					"url": "https://www.vaccinespotter.org/api/v0/states/NY.json",
+					"parameters": {
+						"state": "NY"
+					}
+				},
+				{
+					"name": "NC",
+					"url": "https://www.vaccinespotter.org/api/v0/states/NC.json",
+					"parameters": {
+						"state": "NC"
+					}
+				},
+				{
+					"name": "ND",
+					"url": "https://www.vaccinespotter.org/api/v0/states/ND.json",
+					"parameters": {
+						"state": "ND"
+					}
+				},
+				{
+					"name": "OH",
+					"url": "https://www.vaccinespotter.org/api/v0/states/OH.json",
+					"parameters": {
+						"state": "OH"
+					}
+				},
+				{
+					"name": "OK",
+					"url": "https://www.vaccinespotter.org/api/v0/states/OK.json",
+					"parameters": {
+						"state": "OK"
+					}
+				},
+				{
+					"name": "OR",
+					"url": "https://www.vaccinespotter.org/api/v0/states/OR.json",
+					"parameters": {
+						"state": "OR"
+					}
+				},
+				{
+					"name": "PA",
+					"url": "https://www.vaccinespotter.org/api/v0/states/PA.json",
+					"parameters": {
+						"state": "PA"
+					}
+				},
+				{
+					"name": "PR",
+					"url": "https://www.vaccinespotter.org/api/v0/states/PR.json",
+					"parameters": {
+						"state": "PR"
+					}
+				},
+				{
+					"name": "RI",
+					"url": "https://www.vaccinespotter.org/api/v0/states/RI.json",
+					"parameters": {
+						"state": "RI"
+					}
+				},
+				{
+					"name": "SC",
+					"url": "https://www.vaccinespotter.org/api/v0/states/SC.json",
+					"parameters": {
+						"state": "SC"
+					}
+				},
+				{
+					"name": "SD",
+					"url": "https://www.vaccinespotter.org/api/v0/states/SD.json",
+					"parameters": {
+						"state": "SD"
+					}
+				},
+				{
+					"name": "TN",
+					"url": "https://www.vaccinespotter.org/api/v0/states/TN.json",
+					"parameters": {
+						"state": "TN"
+					}
+				},
+				{
+					"name": "TX",
+					"url": "https://www.vaccinespotter.org/api/v0/states/TX.json",
+					"parameters": {
+						"state": "TX"
+					}
+				},
+				{
+					"name": "VI",
+					"url": "https://www.vaccinespotter.org/api/v0/states/VI.json",
+					"parameters": {
+						"state": "VI"
+					}
+				},
+				{
+					"name": "UT",
+					"url": "https://www.vaccinespotter.org/api/v0/states/UT.json",
+					"parameters": {
+						"state": "UT"
+					}
+				},
+				{
+					"name": "VT",
+					"url": "https://www.vaccinespotter.org/api/v0/states/VT.json",
+					"parameters": {
+						"state": "VT"
+					}
+				},
+				{
+					"name": "VA",
+					"url": "https://www.vaccinespotter.org/api/v0/states/VA.json",
+					"parameters": {
+						"state": "VA"
+					}
+				},
+				{
+					"name": "WA",
+					"url": "https://www.vaccinespotter.org/api/v0/states/WA.json",
+					"parameters": {
+						"state": "WA"
+					}
+				},
+				{
+					"name": "WV",
+					"url": "https://www.vaccinespotter.org/api/v0/states/WV.json",
+					"parameters": {
+						"state": "WV"
+					}
+				},
+				{
+					"name": "WI",
+					"url": "https://www.vaccinespotter.org/api/v0/states/WI.json",
+					"parameters": {
+						"state": "WI"
+					}
+				},
+				{
+					"name": "WY",
+					"url": "https://www.vaccinespotter.org/api/v0/states/WY.json",
+					"parameters": {
+						"state": "WY"
+					}
+				},
+				{
+					"name": "WY",
+					"url": "https://www.vaccinespotter.org/api/v0/states/WY.json",
+					"parameters": {
+						"state": "WY"
+					}
+				},
+				{
+					"name": "states",
+					"url": "https://www.vaccinespotter.org/api/v0/states/states.json",
+					"filename": "states"
+				}
+			],
+			"map": {}
 		}
 	]
 }
